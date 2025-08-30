@@ -53,3 +53,31 @@ article:nth-child(4) {
 article:nth-child(5) {
   background-color: var(--white);
 }
+
+img {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid #A775F1;
+  border-radius: 50%;
+}
+
+article:nth-child(1) img {
+  margin-left: -2px;
+}
+
+article:nth-child(2) img {
+  border: none;
+}
+
+article:nth-child(3) img {
+  border: none;
+}
+
+article:nth-child(4) img {
+  border-color: var(--purple-500);
+}
+
+article:nth-child(5) img {
+  border: none;
+}
