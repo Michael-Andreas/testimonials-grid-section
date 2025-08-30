@@ -11,9 +11,45 @@
   --black: hsl(0, 0%, 7%);
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   letter-spacing: 0px;
   background-color: #F6F5F6;
+}
+
+section {
+  display: grid;
+  gap: 32px;
+  padding: 72px 35px;
+}
+
+article {
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+article:nth-child(1) {
+  background-color: var(--purple-500);
+}
+
+article:nth-child(2) {
+  background-color: var(--grey-500);
+}
+
+article:nth-child(3) {
+  background-color: var(--white);
+}
+
+article:nth-child(4) {
+  background-color: var(--darkblue);
+}
+
+article:nth-child(5) {
+  background-color: var(--white);
 }
