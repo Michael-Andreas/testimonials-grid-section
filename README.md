@@ -43,23 +43,45 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+How to tackle these kind of layouts with css grid. Also to use the blockquote tag
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<blockquote>
+  <p>
+    “ I started as a total newbie with virtually no coding skills. I now work as
+    a mobile engineer for a big company. This was one of the best investments
+    I’ve made in myself. ”
+  </p>
+</blockquote>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+section {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+article {
+  grid-column: 2;
+  grid-column-start: span 2;
+  grid-column-end: auto;
+}
+
+article:nth-child(2),
+article:nth-child(3) {
+  grid-column: 1;
+  grid-column-start: span 1;
+  grid-column-end: auto;
+}
+
+article:nth-child(3) {
+  grid-row-start: row2-start;
+}
+
+article:nth-child(5) {
+  grid-row: 1 / 3;
+  grid-column: 4 / 5;
 }
 ```
 
@@ -69,5 +91,5 @@ const proudOfThisFunc = () => {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [www.michaelandreas.de](https://michaelandreas.de)
+- Frontend Mentor - [@Michael-Andreas](https://www.frontendmentor.io/profile/Michael-Andreas)
