@@ -203,7 +203,8 @@ blockquote p {
 @media (min-width: 68.75rem) {
   section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 75rem;
+    max-width: 69.625rem;
+    padding-top: 229px;
   }
 
   article:nth-child(3) {
