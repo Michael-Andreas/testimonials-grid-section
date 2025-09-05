@@ -43,9 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-How to tackle these kind of layouts with css grid. Also to use the blockquote tag
-
-To see how you can add code snippets, see below:
+How to tackle these kind of layouts with css grid. Also how to use the blockquote tag
 
 ```html
 <blockquote>
